@@ -1,46 +1,13 @@
 import React from "react";
 import "./App.css";
-import personImg from "./assets/heroPersonImg.webp"; // your no-bg person image
+import HeroSection from "./sections/heroSection/HeroSection";
+import CategorySection from "./sections/categorySection/CategorySection";
 
 export default function App() {
   return (
-    <div className="landing">
-      {/* Top Bar */}
-      <div className="top-bar">
-        FREE UK SHIPPING ON ORDERS OVER £40
-      </div>
-
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="nav-left">
-          <button>SHOP</button>
-          <button>ABOUT</button>
-          <button>LEARN</button>
-        </div>
-
-        <div className="logo">PROJECT</div>
-
-        <div className="nav-right">
-          <button>SEARCH</button>
-          <button className="cart-btn">
-            <span>CART</span>
-            <span className="cart-count">0</span>
-          </button>
-        </div>
-      </nav>
-
-      {/* Hero Section */}
-      <header className="hero">
-        <div className="hero-text">
-          <h1>BIG LIPS,<br />BIGGER ENERGY</h1>
-          <p>
-            Our famous lip liner lines, fills and plumps so you can cheat your
-            way to an instant lip lift.
-          </p>
-          <button className="cta">SHOP PLUMP & FILL</button>
-        </div>
-        <img src={personImg} alt="" className="hero-image" />
-      </header>
-      </div>
+    <>
+      <HeroSection />
+      <CategorySection />
+    </>
   );
 }
