@@ -22,7 +22,10 @@ export default function App() {
 
         <div className="nav-right">
           <button>SEARCH</button>
-          <button><p>CART</p> <button className="cart-count">0</button></button>
+          <button className="cart-btn">
+            <span>CART</span>
+            <span className="cart-count">0</span>
+          </button>
         </div>
       </nav>
 
@@ -36,11 +39,8 @@ export default function App() {
           </p>
           <button className="cta">SHOP PLUMP & FILL</button>
         </div>
-
-        <div className="hero-image">
-          <img src={personImg} alt="Person" />
-        </div>
+        <img src={personImg} alt="" className="hero-image" />
       </header>
-    </div>
+      </div>
   );
 }
