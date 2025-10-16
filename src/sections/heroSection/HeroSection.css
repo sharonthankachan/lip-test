@@ -1,7 +1,7 @@
         /* Outer container */
         .landing {
           padding: 1rem;
-          border: 2px solid #ff5a00;
+          border: 2px solid #ff5000;
           border-radius: 40px;
           z-index: 2;
           background-color: #fff;
@@ -12,7 +12,7 @@
 
         /* Top bar */
         .top-bar {
-          background-color: #ff5a00;
+          background-color: #ff5000;
           position: relative;
           margin-top: 20px;
           border-radius: 50px;
@@ -35,7 +35,7 @@
         }
 
         .nav-left {
-          border: 1.5px solid #ff5a00;
+          border: 1.5px solid #ff5000;
           border-radius: 20px;
           height: 40px;
           overflow: hidden;
@@ -62,7 +62,7 @@
         }
 
         .nav-right button {
-          border: 1.5px solid #ff5a00;
+          border: 1.5px solid #ff5000;
           height: 40px;
           border-radius: 20px;
           display: flex;
@@ -78,7 +78,7 @@
         .cart-count {
           position: absolute;
           right: 8px;
-          background: #ff5a00;
+          background: #ff5000;
           color: white;
           border-radius: 50%;
           width: 22px;
@@ -91,12 +91,12 @@
         }
 
         .navbar button:hover {
-          background: #ff5a00;
+          background: #ff5000;
           color: white;
         }
 
         .logo {
-          color: #ff5a00;
+          color: #ff5000;
           font-size: 2rem;
           font-weight: 700;
           z-index: 2;
@@ -123,7 +123,7 @@
           font-size: 4rem;
           font-weight: 900;
           z-index: 2;
-          color: #ff5a00;
+          color: #ff5000;
           margin-bottom: 1.5rem;
           line-height: 1;
         }
@@ -137,8 +137,8 @@
         }
 
         .cta {
-          border: 2px solid #ff5a00;
-          color: #ff5a00;
+          border: 2px solid #ff5000;
+          color: #ff5000;
           background: none;
           padding: 0.8rem 2rem;
           border-radius: 25px;
@@ -149,7 +149,7 @@
         }
 
         .cta:hover {
-          background: #ff5a00;
+          background: #ff5000;
           color: white;
           transform: translateY(-2px);
           box-shadow: 0 4px 12px rgba(255, 90, 0, 0.3);
