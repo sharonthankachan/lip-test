@@ -1,0 +1,295 @@
+.plumping-kits {
+  /* background: #fff; */
+  padding: 4rem 2rem;
+}
+
+.kits-container {
+  /* max-width: 1400px; */
+  margin: 0 auto;
+}
+
+/* HEADER */
+.kits-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.kits-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  color: #ff5000;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.shop-all-kits-btn {
+  background: transparent;
+  color: #ff5000;
+  border: 1px solid #ff5000;
+  padding: 0.8rem 3rem;
+  border-radius: 30px;
+  font-weight: 900;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* letter-spacing: 0.05em; */
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.shop-all-kits-btn:hover {
+  background: #ff5000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 80, 0, 0.3);
+}
+
+/* GRID */
+.kits-grid {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem 0;
+  /* justify-content: center; */
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* grid-template-columns: repeat(4, 1fr); */
+  gap: 1.5rem;
+}
+
+.kits-grid::-webkit-scrollbar {
+  display: none;
+}
+
+/* KIT CARD */
+.kit-card {
+  border-radius: 20px;
+  max-width: 350px;
+  overflow: visible;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.kit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.kit-image-wrapper {
+  position: relative;
+  height: 500px;
+  max-width: 350px;
+
+  aspect-ratio: 1;
+  border: 1px solid #ff5000;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #ff5000;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.kit-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.kit-card:hover .kit-image {
+  transform: scale(1.05);
+}
+
+/* KIT INFO */
+.kit-info {
+  padding: 1.5rem 0.5rem;
+  text-align: left;
+}
+
+.kit-title {
+  font-size: clamp(0.9rem, 1.2vw, 1.3rem);
+  font-weight: 1000;
+  text-transform: uppercase;
+  color: #333333ff;
+  margin-bottom: 0.5rem;
+  /* letter-spacing: 0.02em; */
+  /* line-height: 1.3; */
+}
+
+.kit-description {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+  font-weight: 400;
+}
+
+.kit-pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.current-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff5000;
+}
+
+.original-price {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1b1b1bff;
+  text-decoration: line-through;
+}
+
+/* COLOR DOTS */
+.kit-colors {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-dot:hover {
+  transform: scale(1.15);
+  border-color: #ff5000;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1200px) {
+  .kits-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .plumping-kits {
+    padding: 3rem 1.5rem;
+  }
+
+  .kits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-content: start;
+  }
+
+  .kits-header {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .plumping-kits {
+    padding: 2.5rem 1rem;
+  }
+
+  .kits-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .shop-all-kits-btn {
+    width: 100%;
+    padding: 0.9rem 2rem;
+  }
+
+  .kits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .kit-image-wrapper {
+    padding: 1.5rem;
+  }
+
+  .discount-badge {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .plumping-kits {
+    padding: 2rem 0.75rem;
+  }
+
+  .kits-title {
+    font-size: 1.8rem;
+  }
+
+  .kits-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .kit-card {
+    max-width: 100%;
+  }
+
+  .kit-image-wrapper {
+    padding: 1.5rem;
+  }
+
+  .kit-info {
+    padding: 1.2rem 0.5rem;
+  }
+
+  .kit-title {
+    font-size: 1rem;
+  }
+
+  .current-price {
+    font-size: 1rem;
+  }
+
+  .original-price {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .kits-title {
+    font-size: 1.6rem;
+  }
+
+  .shop-all-kits-btn {
+    font-size: 0.85rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .kit-image-wrapper {
+    padding: 1rem;
+  }
+}

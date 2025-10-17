@@ -9,27 +9,37 @@ export default function BestSellers() {
   const products = [
     {
       id: 1,
-      name: "Plump & Fill Lip Liner",
-      price: "£18",
+      name: "Plump Juice",
+      description: "Plumping & hydrating lip oil",
+      price: "£18.00",
       image: product1,
-      badge: "BESTSELLER",
-      shade: "Berry",
+      colors: ["#ddddddff","#ffc0cb", "#ff69b4"],
     },
     {
       id: 2,
-      name: "Hydrating Lip Oil",
-      price: "£22",
+      name: "Extreme Matte Plumping Primer",
+      description: "Extreme plumping lip primer",
+      price: "£16.00",
       image: product2,
-      badge: "NEW",
-      shade: "Clear",
+      colors: [],
     },
     {
       id: 3,
-      name: "Velvet Matte Lipstick",
-      price: "£20",
+      name: "Plump & Fill",
+      description: "Plumping lip liner",
+      price: "£16.00",
       image: product3,
-      badge: "TRENDING",
-      shade: "Nude",
+      colors: ["#d4a5a5", "#c9a18c", "#a68a75", "#8b7265", "#6b5446", "#ff5000"],
+      moreColors: 3,
+    },
+    {
+      id: 4,
+      name: "Plump & Fill",
+      description: "Plumping lip liner",
+      price: "£16.00",
+      image: product3,
+      colors: ["#d4a5a5", "#c9a18c", "#a68a75", "#8b7265", "#6b5446", "#ff5000"],
+      moreColors: 3,
     },
   ];
 
@@ -41,19 +51,17 @@ export default function BestSellers() {
           <a href="#" className="arrow-right" aria-label="Next">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="50"
-              height="50"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="none"
               stroke="#ff5000"
-              strokeWidth="0.5"
+              strokeWidth="1.5"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-circle-arrow-right"
             >
-              <circle cx="12" cy="12" r="10" />
-              <path d="m12 16 4-4-4-4" />
-              <path d="M8 12h8" />
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
             </svg>
           </a>
         </div>
@@ -72,12 +80,26 @@ export default function BestSellers() {
                   alt={product.name}
                   className="product-image"
                 />
-                <button className="quick-add-btn">QUICK ADD</button>
               </div>
               <div className="product-info">
                 <h3 className="product-name">{product.name}</h3>
-                <p className="product-shade">{product.shade}</p>
+                <p className="product-shade">{product.description}</p>
                 <p className="product-price">{product.price}</p>
+                {product.colors.length > 0 && (
+                  <div className="color-swatches">
+                    {product.colors.map((color, index) => (
+                      <div
+                        key={index}
+                        className="color-swatch"
+                        style={{ backgroundColor: color }}
+                        title={`Color ${index + 1}`}
+                      />
+                    ))}
+                    {product.moreColors && (
+                      <span className="color-count">+{product.moreColors}</span>
+                    )}
+                  </div>
+                )}
               </div>
             </div>
           ))}
