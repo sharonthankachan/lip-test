@@ -47,7 +47,7 @@ export default function PlumpingKitsSection() {
       originalPrice: "£30.00",
       colors: [],
     },
-        {
+    {
       id: 5,
       discount: "27% OFF",
       image: kit3,

@@ -1,0 +1,234 @@
+.made-to-plump {
+  padding: 0rem 2rem;
+}
+
+.made-to-plump-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-end;
+}
+
+.image-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.models-image {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+  display: block;
+}
+
+.orange-stripe {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: #ff5000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 0;
+  z-index: 2;
+}
+
+.stripe-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.stripe-text.middle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-section {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
+  color: #ff5000;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
+}
+
+.description {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 400;
+  max-width: 90%;
+}
+
+.discover-btn {
+  background: transparent;
+  color: #ff5000;
+  border: 1px solid #ff5000;
+  padding: 0.5rem 3rem;
+  border-radius: 30px;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.discover-btn:hover {
+  background: #ff5000;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(255, 80, 0, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .made-to-plump-container {
+    gap: 3rem;
+  }
+
+  .orange-stripe {
+    width: 70px;
+    padding: 2.5rem 0;
+  }
+
+  .stripe-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .made-to-plump {
+    padding: 3rem 1.5rem;
+  }
+
+  .made-to-plump-container {
+    gap: 2.5rem;
+  }
+
+  .orange-stripe {
+    width: 60px;
+    padding: 2rem 0;
+  }
+
+  .stripe-text {
+    font-size: 0.65rem;
+  }
+
+  .content-section {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .made-to-plump {
+    padding: 2.5rem 1rem;
+  }
+
+  .made-to-plump-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .orange-stripe {
+    width: 50px;
+    padding: 1.5rem 0;
+  }
+
+  .stripe-text {
+    font-size: 0.6rem;
+  }
+
+  .content-section {
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .discover-btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .made-to-plump {
+    padding: 2rem 0.75rem;
+  }
+
+  .made-to-plump-container {
+    gap: 2rem;
+  }
+
+  .models-image {
+    border-radius: 20px;
+  }
+
+  .orange-stripe {
+    width: 45px;
+    padding: 1rem 0;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .stripe-text {
+    font-size: 0.55rem;
+    letter-spacing: 0.08em;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .discover-btn {
+    padding: 0.9rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-title {
+    font-size: 1.8rem;
+  }
+
+  .orange-stripe {
+    width: 40px;
+  }
+
+  .stripe-text {
+    font-size: 0.5rem;
+  }
+}

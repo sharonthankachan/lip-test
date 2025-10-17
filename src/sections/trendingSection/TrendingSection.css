@@ -1,12 +1,9 @@
-/* TrendingSection.css - Mobile First Approach */
-
 .trending-product {
-  padding: 2rem 1rem;
-  /* background: #000;  */
+  padding: 2rem 2rem;
 }
 
 .trending-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -14,9 +11,7 @@
   align-items: center;
 }
 
-/* LEFT SIDE - TRENDING IMAGE */
 .trending-left {
-  /* position: relative; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -56,7 +51,7 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-  aspect-ratio: 1/1; /* Maintain square aspect ratio */
+  aspect-ratio: 1/1;
 }
 
 .trending-image {
@@ -67,7 +62,6 @@
   border-radius: 20px;
 }
 
-/* RIGHT SIDE - PRODUCT CARD */
 .trending-right {
   display: flex;
   width: 100%;
@@ -84,7 +78,7 @@
 .product-display {
   width: 100%;
   display: flex;
-  align-items: flex-start; /* Changed from center to flex-start */
+  align-items: flex-start;
   justify-content: center;
   min-height: 200px;
 }
@@ -126,7 +120,6 @@
 .product-details {
   width: 100%;
   text-align: center;
-  /* Removed absolute positioning */
 }
 
 .product-title {
@@ -175,7 +168,6 @@
   box-shadow: 0 8px 16px rgba(255, 80, 0, 0.3);
 }
 
-/* TABLET STYLES */
 @media (min-width: 768px) {
   .trending-product {
     padding: 3rem 1.5rem;
@@ -242,7 +234,6 @@
   }
 }
 
-/* DESKTOP STYLES */
 @media (min-width: 1024px) {
   .trending-product {
     padding: 4rem 2rem;
@@ -263,8 +254,8 @@
   .trending-right {
     order: 0;
     height: 100%;
-    justify-content: flex-start; /* Changed from center to flex-start */
-    gap: 3rem; /* Increased gap for better separation */
+    justify-content: flex-start;
+    gap: 3rem;
   }
 
   .trending-badge {
@@ -280,7 +271,7 @@
     position: absolute;
     top: 5rem;
     left: 2rem;
-        color: #fff;
+    color: #fff;
 
     z-index: 3;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
@@ -300,14 +291,14 @@
   .trending-right {
     border-radius: 30px;
     padding: 2.5rem;
-    justify-content: space-between; /* Better distribution of space */
+    justify-content: space-between;
   }
 
   .product-display {
     min-height: 300px;
-    align-items: flex-start; /* Ensure image stays at top */
+    align-items: flex-start;
     justify-content: center;
-    flex: 1; /* Take available space */
+    flex: 1;
   }
 
   .product-main-image {
@@ -319,16 +310,16 @@
     width: 60px;
     height: 60px;
     right: 1rem;
-    top: 50%; /* Adjusted to be closer to the image */
+    top: 50%;
   }
 
   .product-details {
     text-align: left;
-    position: relative; /* Changed from absolute */
+    position: relative;
     bottom: auto;
     left: auto;
     width: 100%;
-    margin-top: auto; /* Push to bottom if needed */
+    margin-top: auto;
   }
 
   .product-title {
@@ -350,7 +341,6 @@
   }
 }
 
-/* LARGE DESKTOP STYLES */
 @media (min-width: 1440px) {
   .trending-product {
     padding: 5rem 2rem;
@@ -367,11 +357,10 @@
   }
 
   .trending-right {
-    gap: 4rem; /* Even more space on large screens */
+    gap: 4rem;
   }
 }
 
-/* ACCESSIBILITY IMPROVEMENTS */
 @media (prefers-reduced-motion: reduce) {
   .arrow-next,
   .add-to-cart-btn {
@@ -379,12 +368,11 @@
   }
 }
 
-/* HIGH CONTRAST MODE SUPPORT */
 @media (prefers-contrast: high) {
   .trending-badge {
     border: 2px solid #fff;
   }
-  
+
   .add-to-cart-btn {
     border-width: 2px;
   }

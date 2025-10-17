@@ -13,7 +13,6 @@
   font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   font-weight: 1000;
   color: #333;
-  /* letter-spacing: 0.15em; */
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -31,7 +30,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 0.5rem; */
 }
 
 .logo-image {
@@ -47,7 +45,6 @@
   transform: scale(1.05);
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 1200px) {
   .logos-grid {
     grid-template-columns: repeat(3, 1fr);

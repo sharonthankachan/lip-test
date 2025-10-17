@@ -7,7 +7,6 @@ export default function TrendingSection() {
   return (
     <section className="trending-product">
       <div className="trending-container">
-        {/* Left Side - Trending Image */}
         <div className="trending-left">
           <div className="trending-badge">TRENDING ON TIKTOK</div>
           <h2 className="trending-title">
@@ -24,7 +23,6 @@ export default function TrendingSection() {
           </div>
         </div>
 
-        {/* Right Side - Product Card */}
         <div className="trending-right">
           <div className="product-display">
             <img

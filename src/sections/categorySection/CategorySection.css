@@ -1,11 +1,10 @@
 .container {
   margin: 0 auto;
-  padding: 4rem 0.25rem;
+  padding: 4rem 1rem;
 }
 
-/* Product Cards Grid */
 .product-cards {
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -63,7 +62,6 @@
   margin: 0;
 }
 
-/* Features Marquee */
 .features-marquee {
   padding: 1.2rem 0;
   overflow: hidden;
@@ -98,19 +96,12 @@
   }
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .product-cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
 
-  .card:last-child {
-    grid-column: 1 / -1;
-    max-width: 600px;
-    margin: 0 auto;
-    width: 100%;
-  }
 
   .card-title {
     font-size: 3rem;

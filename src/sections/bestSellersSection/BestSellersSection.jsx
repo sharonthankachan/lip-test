@@ -13,7 +13,7 @@ export default function BestSellers() {
       description: "Plumping & hydrating lip oil",
       price: "£18.00",
       image: product1,
-      colors: ["#ddddddff","#ffc0cb", "#ff69b4"],
+      colors: ["#ddddddff", "#ffc0cb", "#ff69b4"],
     },
     {
       id: 2,
@@ -29,7 +29,14 @@ export default function BestSellers() {
       description: "Plumping lip liner",
       price: "£16.00",
       image: product3,
-      colors: ["#d4a5a5", "#c9a18c", "#a68a75", "#8b7265", "#6b5446", "#ff5000"],
+      colors: [
+        "#d4a5a5",
+        "#c9a18c",
+        "#a68a75",
+        "#8b7265",
+        "#6b5446",
+        "#ff5000",
+      ],
       moreColors: 3,
     },
     {
@@ -38,7 +45,14 @@ export default function BestSellers() {
       description: "Plumping lip liner",
       price: "£16.00",
       image: product3,
-      colors: ["#d4a5a5", "#c9a18c", "#a68a75", "#8b7265", "#6b5446", "#ff5000"],
+      colors: [
+        "#d4a5a5",
+        "#c9a18c",
+        "#a68a75",
+        "#8b7265",
+        "#6b5446",
+        "#ff5000",
+      ],
       moreColors: 3,
     },
   ];

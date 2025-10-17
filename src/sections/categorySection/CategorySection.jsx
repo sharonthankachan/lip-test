@@ -21,7 +21,6 @@ export default function CategorySection() {
 
   return (
     <div className="container">
-      {/* Product Category Cards */}
       <section className="product-cards">
         {categories.map((item, index) => (
           <div className="card" key={index}>
@@ -34,14 +33,13 @@ export default function CategorySection() {
         ))}
       </section>
 
-      {/* Features Marquee */}
       <div className="features-marquee">
         <div className="marquee-content">
-          {Array(2)
+          {Array(3) // Increased to 3 for smoother loop
             .fill(features)
             .flat()
             .map((text, index) => (
-              <div key={index}>
+              <div key={index} className="marquee-item">
                 <span>{text}</span>
                 <span className="dot">•</span>
               </div>

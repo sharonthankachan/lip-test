@@ -21,15 +21,11 @@ export default function FeaturedSection() {
     <section className="featured-in">
       <div className="featured-container">
         <h2 className="featured-title">FEATURED IN</h2>
-        
+
         <div className="logos-grid">
           {logos.map((logo) => (
             <div key={logo.id} className="logo-item">
-              <img 
-                src={logo.src} 
-                alt={logo.alt} 
-                className="logo-image"
-              />
+              <img src={logo.src} alt={logo.alt} className="logo-image" />
             </div>
           ))}
         </div>
